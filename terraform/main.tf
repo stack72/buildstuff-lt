@@ -102,7 +102,7 @@ module "kinesis_es_lambda" {
   account_id    = "${var.account_id}"
 }
 
-module "kineis_lambda_connector" {
+module "kinesis_lambda_connector" {
   source = "./modules/kinesis_connector"
 
   kinesis_stream_arn = "${module.logs_stream.arn}"
